@@ -1,3 +1,7 @@
+###############################
+##     by MasterGreenyMC     ##
+## github.com/MasterGreenyMC ##
+###############################
 
 
 def color(color="", word=""):
