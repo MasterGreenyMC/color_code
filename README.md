@@ -1,7 +1,7 @@
 # color_code
 ### Description
 You can import it in Python3 and use it to color your print() outputs.
-Use color("color", "text")
+Use color("color", "text").
 ### Colors
 bold, italic, underlined
 
