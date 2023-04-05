@@ -5,10 +5,9 @@
 
 
 def color(color="", word=""):
-    global out
     out = ""
 
-    color = color.split(",")
+    color = color.lower().replace(" ", "").split(",")
     for i in color:
         if i == "bold":
             out += "\33[1m"
@@ -50,12 +49,9 @@ def color(color="", word=""):
             out += "\33[38;5;14m"
         elif i == "light_white":
             out += "\33[38;5;15m"
-
         elif i == "light_gray":
             out += "\33[38;5;252m"
         elif i == "dark_gray":
             out += "\33[38;5;245m"
 
-    out += word + "\033[0m"
-
-    return out
+    return out + word + "\033[0m"
